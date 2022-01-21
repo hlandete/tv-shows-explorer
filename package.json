@@ -10,7 +10,9 @@
   "dependencies": {
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-scripts": "3.4.3"
+    "react-router-dom": "^6.2.1",
+    "react-scripts": "3.4.3",
+    "sass": "^1.49.0"
   },
   "devDependencies": {
     "typescript": "3.8.3"

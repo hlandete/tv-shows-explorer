@@ -1,0 +1,59 @@
+a {
+  text-decoration: none;
+}
+.card {
+  position: relative;
+  margin: 10px;
+  height: 500px;
+  width: 250px;
+  border-radius: 25px;
+  background-color: #000;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 4px 3px 11px 6px rgba(170, 0, 0, 0.75);
+    transform: translateY(-3px);
+  }
+  .thumbnail {
+    position: inherit;
+    height: 70%;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 25px 25px 0 0;
+    }
+
+    .name {
+      position: absolute;
+      box-sizing: border-box;
+      bottom: 0;
+      left: 0;
+      padding: 20px 15px;
+      width: 100%;
+      background: #00000070;
+      color: #fff;
+      font-size: 21px;
+      font-weight: 700;
+    }
+  }
+
+  .description {
+    position: inherit;
+    height: 30%;
+    overflow: hidden;
+    color: #fff;
+    p {
+      margin: 0;
+      padding: 10px 15px 0;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+      font-size: 18px;
+      font-weight: 300;
+    }
+  }
+}

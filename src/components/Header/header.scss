@@ -1,0 +1,39 @@
+header {
+  position: relative;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  background-color: #000;
+
+  .row {
+    flex-direction: row-reverse;
+    img {
+      position: absolute;
+      width: 160px;
+      margin-top: -40px;
+      left: 0;
+    }
+
+    .search-box {
+      height: 30px;
+      width: 50%;
+      margin: auto 5% auto auto;
+      margin-top: auto;
+      max-width: 300px;
+      min-width: 150px;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header {
+    .row {
+      img {
+        position: absolute;
+        width: 40%;
+        margin-top: -10%;
+        left: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+html {
+  background-color: #fff;
+  .wrapper {
+    background-color: #eae9e9;
+    margin-top: 50px;
+  }
+}
+
+li {
+  list-style: none;
+}
+.App {
+  font-family: "Open Sans", sans-serif;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+}
