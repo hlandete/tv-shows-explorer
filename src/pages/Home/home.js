@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Card from "../../components/Card/card";
 import LoadingOverlay from "../../components/LoadingOverlay/loading_overlay";
+import NoData from "../../components/NoData/nodata";
 import "./home.scss";
 
 
@@ -58,7 +59,8 @@ useEffect(() => {
     }
   }
 
-  if(shows.length){
+  if(isLoaded){
+    if(shows.length){
         return (
             <div id="home" className="wrapper">
                 {shows.slice(0,itemsAmount).map((value, index) => {
@@ -67,6 +69,11 @@ useEffect(() => {
             </div>   
         );
     }
+    else{
+        return (<NoData></NoData>)
+    }
+  }
+  
     else{
         return(
             <LoadingOverlay />
