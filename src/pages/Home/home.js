@@ -54,7 +54,8 @@ useEffect(() => {
   }
   
   function loadMore(){
-    if (window.innerHeight + document.documentElement.scrollTop > document.scrollingElement.scrollHeight) {
+    console.log(document.scrollingElement.scrollHeight)
+    if (window.innerHeight + document.documentElement.scrollTop >= document.scrollingElement.scrollHeight) {
         setItemsAmount(itemsAmount + 20)
     }
   }
