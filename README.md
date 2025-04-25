@@ -4,6 +4,7 @@
 
 Project built on React to find and navigate through tv shows
 
+You can check working live project in codesandbox: https://codesandbox.io/p/sandbox/charming-borg-uxec3
 ## Installation
 
 We need to have node and npm installed.
